@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ad{
+            position: relative;
+            background: lightcoral;
+            margin: 100px;
+            height: 40px;
+        }
+        input{
+            border: 2px solid blue;
+            height: 100%;
+            
+        }
+        span{
+            position: absolute;
+            left: 10px;
+            bottom: 10px; 
+            background: #fff;
+            padding-inline: 5px;
+            transition: .5s;
+        }
+        
+        input:focus+ span{
+          bottom: 80%;  
+        }
+        input:valid+span{
+            bottom: 80%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ad">
+        <input type="text">
+        <span>Adiniz</span>
+    </div>
+</body>
+</html>
